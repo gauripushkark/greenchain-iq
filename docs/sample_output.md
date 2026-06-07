@@ -6,6 +6,11 @@ Command used:
 
 ```bash
 python src/app.py
+```
+
+## Output
+
+```text
 ================================================================================
 GreenChain IQ: Supplier Sustainability Risk Agent
 ================================================================================
@@ -260,4 +265,4 @@ Responsible AI and Data Safety Note
 ================================================================================
 This demo uses only synthetic supplier data. It does not include confidential employer, client, vendor, or personal information.
 The agent is designed as a decision-support tool and does not replace human compliance, legal, procurement, or sustainability review.
-
+```
