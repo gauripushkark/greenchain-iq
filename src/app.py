@@ -2,7 +2,7 @@ from pathlib import Path
 
 from risk_scoring import load_suppliers, evaluate_supplier, print_supplier_report
 from prompts import SYSTEM_PROMPT, DEMO_QUESTION
-
+from knowledge_base import get_grounding_for_supplier
 
 def print_project_intro():
     """Print a simple project introduction for the demo."""
@@ -94,7 +94,15 @@ def main():
     print()
 
     for result in results:
-        print_supplier_report(result)
+    print_supplier_report(result)
+
+    grounding_items = get_grounding_for_supplier(result["reasoning"])
+
+    print("Grounded Policy Guidance:")
+    for item in grounding_items:
+        print(f"- Source: {item['source']}")
+        print(f"  Guidance: {item['excerpt']}")
+    print()
 
     print_responsible_ai_note()
 
