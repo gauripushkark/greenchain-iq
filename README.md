@@ -66,6 +66,59 @@ greenchain-iq/
     └── architecture.png
 
 
+## How to Run the MVP Demo
+
+This project currently includes a command-line MVP demo that reads synthetic supplier ESG data and classifies each supplier as Low, Medium, or High Risk.
+
+### Run in GitHub Codespaces or a local Python environment
+
+```bash
+python src/app.py
+```
+
+If your environment uses Python 3 explicitly, run:
+
+```bash
+python3 src/app.py
+```
+
+### Expected Output
+
+The demo prints:
+
+* Project overview
+* Hackathon track and Microsoft IQ layer
+* Agent prompt preview
+* Portfolio-level supplier risk summary
+* Detailed supplier-level risk reports
+* Responsible AI and data safety note
+
+Example portfolio summary:
+
+```text
+High Risk Suppliers: 4
+Medium Risk Suppliers: 1
+Low Risk Suppliers: 3
+```
+
+## MVP Capabilities
+
+The current MVP can:
+
+1. Read synthetic supplier ESG data from a CSV file.
+2. Evaluate emissions, labor, waste, and water scores.
+3. Check certification status.
+4. Check audit recency using a fixed hackathon demo reference date.
+5. Classify suppliers as Low, Medium, or High Risk.
+6. Explain the risk drivers.
+7. Recommend follow-up actions.
+8. Print an executive summary for each supplier.
+
+## Next Planned Enhancements
+
+The next phase is to connect the synthetic policy documents in the `docs/` folder to Foundry IQ and use them as a grounded knowledge base for the reasoning agent.
+
+
 ## Current Status
 
 This project is under development for the Microsoft Agents League Hackathon.
