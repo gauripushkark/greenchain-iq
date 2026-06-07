@@ -1,0 +1,3 @@
+# GreenChain IQ currently uses Python standard libraries for the MVP risk scoring logic.
+
+# Additional packages may be added later for the app interface and Microsoft Foundry integration.
