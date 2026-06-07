@@ -39,6 +39,13 @@ This project uses Foundry IQ as the required Microsoft IQ intelligence layer. Fo
 
 The agent uses this knowledge base to ground its explanations and recommendations.
 
+## Architecture
+
+The project architecture is documented in [`docs/architecture.md`](docs/architecture.md).
+
+The MVP currently uses a local knowledge retrieval scaffold to demonstrate the intended Foundry IQ retrieval pattern. The final architecture is designed to connect the synthetic policy documents to Foundry IQ as a grounded knowledge base for the Microsoft Foundry reasoning agent.
+
+
 ## Responsible AI and Data Safety
 
 This project uses only synthetic demo data. It does not include confidential employer, client, vendor, or personal information.
