@@ -146,6 +146,33 @@ The current local retrieval layer uses synthetic markdown documents such as:
 
 In the next phase, these documents are intended to be connected to Foundry IQ as a grounded knowledge base for the reasoning agent.
 
+## Foundry IQ Integration Plan
+
+The required Microsoft IQ layer for this project is Foundry IQ.
+
+The current MVP implements a local grounded retrieval scaffold using synthetic markdown policy documents. This scaffold demonstrates the same reasoning pattern intended for Foundry IQ integration:
+
+```text
+Supplier ESG data
+  → Risk scoring
+  → Risk drivers
+  → Relevant policy guidance retrieval
+  → Grounded recommendations
+  → Executive summary
+```
+
+In the planned Foundry IQ implementation, the synthetic policy documents in the `docs/` folder would be connected to a Foundry IQ knowledge base. A Microsoft Foundry agent would then retrieve relevant guidance from the knowledge base before generating supplier risk classifications and follow-up recommendations.
+
+The planned Foundry IQ knowledge base would include:
+
+* Supplier ESG policy
+* Risk scoring guide
+* Certification requirements
+* Audit frequency rules
+* Corrective action playbook
+
+This project intentionally uses only synthetic demo data and avoids uploading confidential employer, client, vendor, or personal information.
+
 
 ## Next Planned Enhancements
 
