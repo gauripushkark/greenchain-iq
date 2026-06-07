@@ -94,15 +94,15 @@ def main():
     print()
 
     for result in results:
-    print_supplier_report(result)
+        print_supplier_report(result)
 
-    grounding_items = get_grounding_for_supplier(result["reasoning"])
+        grounding_items = get_grounding_for_supplier(result["reasoning"])
 
-    print("Grounded Policy Guidance:")
-    for item in grounding_items:
-        print(f"- Source: {item['source']}")
-        print(f"  Guidance: {item['excerpt']}")
-    print()
+        print("Grounded Policy Guidance:")
+        for item in grounding_items:
+            print(f"- Source: {item['source']}")
+            print(f"  Guidance: {item['excerpt']}")
+        print()
 
     print_responsible_ai_note()
 
