@@ -45,6 +45,11 @@ The project architecture is documented in [`docs/architecture.md`](docs/architec
 
 The MVP currently uses a local knowledge retrieval scaffold to demonstrate the intended Foundry IQ retrieval pattern. The final architecture is designed to connect the synthetic policy documents to Foundry IQ as a grounded knowledge base for the Microsoft Foundry reasoning agent.
 
+## Agent Orchestration
+
+The logical multi-agent orchestration design is documented in [`docs/agent_orchestration.md`](docs/agent_orchestration.md).
+
+The current MVP is implemented as a modular command-line prototype, but the design is structured around multiple logical agents: data review, certification readiness scoring, grounded policy retrieval, corrective action recommendation, and executive summary generation.
 
 ## Responsible AI and Data Safety
 
