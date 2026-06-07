@@ -114,6 +114,32 @@ The current MVP can:
 7. Recommend follow-up actions.
 8. Print an executive summary for each supplier.
 
+## Grounded Knowledge Retrieval Scaffold
+
+The MVP includes a local knowledge retrieval scaffold that reads synthetic policy documents from the `docs/` folder and selects relevant guidance based on the supplier's risk drivers.
+
+This scaffold demonstrates the intended retrieval pattern for the final Foundry IQ integration:
+
+```text
+Supplier ESG data
+  → Risk scoring logic
+  → Risk drivers
+  → Relevant policy document selection
+  → Grounded policy guidance
+  → Business-ready recommendations
+```
+
+The current local retrieval layer uses synthetic markdown documents such as:
+
+* `supplier_esg_policy.md`
+* `risk_scoring_guide.md`
+* `certification_requirements.md`
+* `audit_frequency_rules.md`
+* `corrective_action_playbook.md`
+
+In the next phase, these documents are intended to be connected to Foundry IQ as a grounded knowledge base for the reasoning agent.
+
+
 ## Next Planned Enhancements
 
 The next phase is to connect the synthetic policy documents in the `docs/` folder to Foundry IQ and use them as a grounded knowledge base for the reasoning agent.
